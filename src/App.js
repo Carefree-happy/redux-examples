@@ -1,10 +1,11 @@
 import './App.css';
+import Subreddit from './containers/Subreddit'
 
 function App() {
 
   return (
     <div className="App">
-      Hello, Redux
+      <Subreddit/>
     </div>
   );
 }
