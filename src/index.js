@@ -2,19 +2,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import React from 'react'
 import { render } from 'react-dom'
-import generateTree from './generateTree'
-import reducer from './reducers'
-import Node from './containers/Node'
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-
-const tree = generateTree()
-const store = createStore(reducer, tree)
+import App from './App'
 
 render(
-  <Provider store={store}>
-    <Node id={0} />
-  </Provider>,
+  <App />,
   document.getElementById('root')
 )
 
