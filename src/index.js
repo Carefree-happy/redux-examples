@@ -2,13 +2,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import React from 'react'
 import { render } from 'react-dom'
-import App from './components/App'
-import reducer from './reducers'
 import { createStore } from 'redux';
-import 'todomvc-app-css/index.css'
+import App from './components/App'
 import { Provider } from 'react-redux';
+import rootReducer from './reducers'
 
-const store = createStore(reducer)
+const store = createStore(rootReducer)
 
 render(
   <Provider store={store}>
