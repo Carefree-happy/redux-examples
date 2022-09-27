@@ -2,17 +2,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore } from 'redux';
-import App from './components/App'
-import { Provider } from 'react-redux';
-import rootReducer from './reducers'
-
-const store = createStore(rootReducer)
+import App from './App'
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <App />,
   document.getElementById('root')
 )
 
